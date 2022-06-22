@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap);
+
+
+body {
+    font-family: 'Fredoka One', cursive;
+
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  color: white;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    margin: 25px auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav h2{
+    font-size: 2rem;
+}
+.user-input{
+    width: 350px;
+    text-align: center;
+
+}
+.user-input input{
+    width: 80%;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    outline: none;
+    border: 1px solid lightgray;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+
+}
+.user-input input:focus{
+    box-shadow: 0 0 10px  pink;
+}
+.user-input button{
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: fit-content;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    cursor: pointer;
+
+    transition: all 0.30s ease-in-out;
+
+}
+.user-input button:hover{
+    background: transparent;
+    color: white;
+}
+.to-do-items{
+    margin: auto;
+    width: 500px;
+
+}
+.items{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    font-weight: bolder;
+    color: #242323;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+.items:hover{
+    box-shadow: 0 0 20px  pink;
+
+}
+.items i{
+    margin: 5px;
+}
+
+.darklight{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i{
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+i.sun{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.icons.active i.sun{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.icons.active i.moon{
+    opacity: 0;
+    pointer-events: none;
+}
